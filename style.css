@@ -17,11 +17,12 @@ h1{
 .resDiv{
     display:flex;
     justify-content: start;
-    
+    padding: 4px;
+    border: 1px red;
 }
 #response{
     display: flex;
-    justify-content: end;
+    justify-content: center;
 }
 button{
     padding: 4px;
@@ -29,6 +30,5 @@ button{
     background-color: lightpink;
     font-family: 'Cuprum', sans-serif;
     font-family: 'Noto Sans JP', sans-serif;
-    
     
 }
