@@ -7,7 +7,7 @@ var mainContainer;
 const btn = document.getElementById("boroughBtn");
 
 btn.addEventListener("mouseover", (event) => {
-  // console.log(button has been clicked);
+  // console.log(button has been hovered over);
   console.log(event)
   event.preventDefault();
 let boroughs = event.path[0].innerHTML
@@ -36,10 +36,13 @@ console.log(boroughs);
         var divThree = document.createElement("div");
 
         divOne.innerHTML = `resolution description: ${policeData[i].resolution_description}`;
+        //Create new class called resDiv
         divOne.className = 'resDiv'
         divTwo.innerHTML =  `borough: ${policeData[i].borough}` ;
+        //Create new class called resDiv
         divTwo.className = 'resDiv'
         divThree.innerHTML =  `descriptor: ${policeData[i].descriptor}`;
+        //Create new class called resDiv
         divThree.className = 'resDiv'
 
 
