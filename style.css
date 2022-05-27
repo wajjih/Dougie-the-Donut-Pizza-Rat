@@ -1,0 +1,34 @@
+body{
+    background-color: lightblue;
+    font-family: 'Cuprum', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    
+}
+
+h1{
+   display: flex;
+   justify-content: center;
+}
+
+#boroughBtn{
+    display: flex;
+    justify-content: center;
+}
+.resDiv{
+    display:flex;
+    justify-content: start;
+    
+}
+#response{
+    display: flex;
+    justify-content: end;
+}
+button{
+    padding: 4px;
+    border: 1px red;
+    background-color: lightpink;
+    font-family: 'Cuprum', sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
+    
+    
+}
