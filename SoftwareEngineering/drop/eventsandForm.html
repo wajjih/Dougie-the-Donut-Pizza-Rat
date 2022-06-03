@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, td {
+          border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <!-- To Do List -->
+    <ul id="to-do"></ul>
+    <form>
+        <!-- To Do Form -->
+        <!-- Required Input: Text Field & Button -->
+        <!-- Bonus: Add Strikethrough to show completion -->
+        <input type="text">
+        <button>Submit</button>
+    </form>
+   
+    <div id="order"></div>
+    <form>
+        <!-- Order Form -->
+        <!-- Required Input: 4 Separate Number Fields & Button-->
+        <!-- Bonus: Show the TOTAL SUM of items ordered -->
+        <label for="cookie" id="cookie">Cookie</label>
+        <input class='ckie' type="text">
+        
+        <label for="ice-cream">ice-cream</label>
+        <input class='icrm' type="text">
+        
+        <label for="sandwich">sandwich</label>
+        <input class='sdwh' type="text">
+        
+        <label for="potato">potato</label>
+        <input class='pto' type="text">
+        <button id="dude">Submit</button>
+    </form>
+
+    
+    <form>
+        <!-- Required Input: Two Text Fields -->
+        <!-- Add post to forum -->
+        <!-- BONUS! Add toggle button to 'post' to count number of likes-->
+        <label for="username">Username</label>
+        <input id='user' type="text">
+        <label for="message">Message</label>
+        <input id ='message'type="text">
+        <button id="dude2">Submit</button>
+        
+    </form>
+    <div id="forum">
+            
+    </div>
+    
+    
+    
+
+    <script>
+    //Number 2
+    const button = document.querySelector('#dude')
+    button.addEventListener('click', function(event){
+    //console.log(event);
+    // create il element
+    const ckie = document.querySelector('.ckie').value
+    const icrm = document.querySelector('.icrm').value
+    const sdwh = document.querySelector('.sdwh').value
+    const pto = document.querySelector('.pto').value
+    alert(`The total is ${Number(ckie) + Number(icrm) + Number(sdwh) + Number(pto)}`)
+    input.value=''
+    
+})
+//Number 3
+function append_to_div(div_name, data){
+             document.getElementById(div_name).innerText += data;
+         }
+
+    const button2 = document.querySelector('#dude2')
+    button2.addEventListener('click', function(event){
+        console.log(event);
+        event.preventDefault()
+        var user_name = document.getElementById("user");
+        var message = document.getElementById('message')
+        var value = user_name.value.trim() + ':\n' + message.value + "\n"
+            
+         if(!value)
+                alert("Name Cannot be empty!");
+            else
+                append_to_div("forum", value+"\n");
+              
+            user_name.value = "";
+            message.value = '';
+        
+
+    })
+
+    </script>
+    
+</body>
+</html>

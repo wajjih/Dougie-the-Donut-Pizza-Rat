@@ -1,0 +1,58 @@
+.bodyContainer{
+    border: 1px solid black;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "ad1 empty1 feed1 feed1 empty2 ad2"
+                         "ad1 empty1 feed1 feed1 empty2 ad2"
+                         "ad1 empty1 feed1 feed1 empty2 ad2"
+                         "ad1 empty1 feed2 feed2 empty2 ad2"
+                         "ad1 empty1 feed2 feed2 empty2 ad2"
+                      "footer footer footer footer footer footer"
+                         
+    ;
+    
+}
+
+.child{
+    box-shadow: 1px 1px 1px 1px black;
+    margin: 1%;
+    
+}
+#boxOne{
+    grid-area: ad1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#boxtwo{
+    grid-area: ad2;
+}
+#boxThree{
+    grid-area: feed1;
+}
+#boxFour{
+    grid-area: feed2;
+}
+#boxFive{
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.boxOneItems{
+    border: 1px solid blue;
+    height: 33.3%;
+    width: 100%;
+}
+
+.boxFiveItems{
+    border: 1px solid blue;
+    height: 100%;
+    width: 25%;
+
+}

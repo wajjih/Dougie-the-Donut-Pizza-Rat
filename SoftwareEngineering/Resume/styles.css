@@ -1,0 +1,36 @@
+hr{
+    border: 3px solid black;
+    
+}
+header{
+    text-align: center;
+}
+h3{
+    color: darkslategray;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+.deez{
+    font-weight: bold;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+}
+.doze{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+h4{
+    font-style: italic;
+    color:darkslategray;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    margin-left: 150px;
+    margin-right: 150px;
+}
+li{
+    font-family: 'Times New Roman', Times, serif;
+}
